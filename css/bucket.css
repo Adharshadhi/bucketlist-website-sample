@@ -1,0 +1,146 @@
+html, body {
+    height:100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Playfair Display', serif;
+}
+
+.mynav{
+    background-color: transparent;
+}
+
+.maincontent{
+    background-image: url(https://images.unsplash.com/photo-1569530593523-083e18aecc75?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=600&q=60);
+    height: 100vh;
+    width:100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+.maincontent h1{
+    font-weight: bold;
+}
+
+.maincontent p{
+    font-size: 1.25rem;
+    font-weight: bold;
+    color:#2c3e50;
+}
+
+.maincontent hr{
+    width:50%;
+    border: 1px solid #2c3e50;
+}
+
+.glow {
+    color: #444;
+    text-shadow: 
+      1px 0px 1px #ccc, 0px 1px 1px #eee, 
+      2px 1px 1px #ccc, 1px 2px 1px #eee,
+      3px 2px 1px #ccc, 2px 3px 1px #eee,
+      4px 3px 1px #ccc, 3px 4px 1px #eee,
+      5px 4px 1px #ccc, 4px 5px 1px #eee,
+      6px 5px 1px #ccc, 5px 6px 1px #eee,
+      7px 6px 1px #ccc;
+  }
+
+.mynav .navbar .navbar-brand{
+    color:#273c75;
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+#navbarToggle .navbar-nav .nav-link{
+    color:#273c75;
+    font-weight: normal;
+}
+
+.mynav .navbar .navbar-brand:hover{
+    color:#192a56;
+    font-weight: bold;
+}
+
+#navbarToggle .navbar-nav .nav-link:hover{
+    color:#192a56;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.navbar.scrolled {
+    background: #ecf0f1;
+    transition: background 500ms;
+}
+
+.content {
+    background-color: white;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+ 
+.paraOne p {
+    color: #2980b9;
+    font-weight: 100;
+    font-size: 1.125rem;
+    line-height: 2;
+}
+
+.gridcontent{
+    height:800px;
+    opacity: 0;
+}
+
+.gridcontent img, .container .card{
+    width:30%;
+    float:left;
+    margin:1.66%;
+}
+
+.imgreveal{
+    opacity: 1;
+    transition: opacity 500ms ease-in;
+}
+
+.imgdisappear{
+    opacity: 0;
+    transition: opacity 1000ms ease-out;
+}
+
+hr{
+    width:5em;
+    border-top:2px solid #2c3e50;
+}
+
+footer{
+    color:white;
+    background-color: black;
+    padding:25px;
+}
+
+footer a{
+    color:white;
+}
+
+@media only screen and (max-width:992px){
+    .gridcontent{
+        height:600px;
+        margin-bottom: 50px;
+        padding-bottom: 50px;
+    }
+}
+
+@media only screen and (max-width:768px){
+    .gridcontent{
+        height: 500px;
+    }
+
+    .special{
+        flex-direction: column;
+    }
+
+    .special .card{
+        width: 100%;
+        text-align: center;
+    }
+}
