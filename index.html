@@ -38,11 +38,42 @@
       </nav>
     </div>
 
+    <div id="bucketListModal" class="modal fade">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title">Create Your Bucket List</h4>
+            <button class="close" data-dismiss="modal">
+              X
+            </button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="form-group">
+                <input type="text" class="form-control" placeholder="Add a new task">
+              </div>
+              <div class="form-group">
+                <input type="text" class="form-control" placeholder="Add a new task">
+              </div>
+              <div class="form-group">
+                <input type="text" class="form-control" placeholder="Add a new task">
+              </div>
+              <div class="btn-group">
+                <button type="submit" class="btn btn-primary">Add Another</button>
+                <button type="submit" class="btn btn-danger">Submit</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
     <div class="container-fluid maincontent text-center d-flex flex-column justify-content-center align-items-center">
       <h1 class=" glow text-center">Make Your Dreams Happen</h1>
       <p class="text-center mb-5">DREAM. BUCKET LIST. WORK. ACHIEVE</p>
       <hr>
-      <button class="btn btn-lg btn-primary mt-3">Start Building Now</button>
+      <button class="btn btn-lg btn-primary mt-3" data-toggle="modal" data-target="#bucketListModal">Start Building Now</button>
     </div>
 
     <section class="container">
@@ -125,7 +156,7 @@
     <div class="container-fluid d-inline-block poli text-center mt-5 p-5">
       <h1 class="pb-4">What Are You Waiting For?</h1>
       <hr>
-      <button class="btn btn-lg btn-info">Create New Bucket List</button>
+      <button class="btn btn-lg btn-info" data-toggle="modal" data-target="#bucketListModal">Create New Bucket List</button>
     </div>
 
     <footer class="text-center mt-5">
